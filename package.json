@@ -1,0 +1,18 @@
+{
+  "name": "color-component",
+  "version": "1.0.0",
+  "description": "This is a small project I started in August 2022 and finished within the first week. I grabbed the colors from [Color Material UI](https://mui.com/material-ui/customization/color/) website.",
+  "main": "index.js",
+  "browserslist": "last 10 versions",
+  "scripts": {
+    "watchSass": "sass --watch sass/style.scss:css/style.css",
+    "liveServer": "live-server",
+    "prefixCSS": "postcss css/style.css --use autoprefixer -o css/style.prefix.css",
+    "uglifyCSS": "uglifycss css/style.prefix.css --output _dist/css/style.css",
+    "modifyCSS": "npm-run-all prefixCSS uglifyCSS",
+    "startDev": "npm-run-all --parallel watchSass liveServer"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
